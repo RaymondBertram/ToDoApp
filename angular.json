@@ -144,6 +144,15 @@
               "devServerTarget": "ToDoApp:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
@@ -151,6 +160,7 @@
   "cli": {
     "analytics": "a5cee018-878c-47ed-ad14-39d3a20c15cb",
     "schematicCollections": [
+      "@angular-eslint/schematics",
       "@cypress/schematic",
       "@schematics/angular"
     ]

@@ -43,25 +43,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  .table {
-    
-  }
 </style>
 
 <main class="main">
   <div class="content">
-    <h1>Test</h1>
+    <h1>To-Do App</h1>
+      <nav>
+        <ul>
+          <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+          <li><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a></li>
+        </ul>
+      </nav>
   </div>
 </main>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet></router-outlet>
